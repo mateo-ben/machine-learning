@@ -17,7 +17,7 @@ Proyecto de **aprendizaje no supervisado** (K-Means, agrupamiento jerárquico Wa
 - **Archivo original:** `BDD_GIRS_2024_VF.csv` (221 filas × 213 columnas)
 - **Fecha de descarga:** 09/11/2026
 
-El archivo de este repositorio **no es la base original**. Es una tabla derivada con identificadores, variables descriptivas y 5 características calculadas a partir del original. Los nombres no llevan tildes ni eñes para evitar problemas de codificación.
+El archivo de datos de este repositorio **no es la base original**. Es una tabla derivada con identificadores, variables descriptivas y 5 características calculadas a partir del original. Los nombres no llevan tildes ni eñes para evitar problemas de codificación.
 
 ## Estructura
 
@@ -26,8 +26,17 @@ reto1/
 ├── datos/
 │   └── girs2024_caracteristicas.csv
 ├── Reto1_GIRS_notebook.ipynb
+├── Graficos_informe_Reto1.xlsx
+├── Informe_Reto1.docx
 └── README.md
 ```
+
+| Archivo | Contenido |
+|---|---|
+| `datos/girs2024_caracteristicas.csv` | Base preparada para el análisis (descrita abajo) |
+| `Reto1_GIRS_notebook.ipynb` | Notebook de Colab: auditoría, preparación, K-Means, Ward, PCA, perfiles y conclusiones. Genera la Figura 3 del informe (`figura3_pca.png`) |
+| `Graficos_informe_Reto1.xlsx` | Datos y gráficos de las Figuras 1 y 2 del informe, elaborados con los valores obtenidos en el notebook |
+| `Informe_Reto1.docx` | Informe divulgativo dirigido a técnicos municipales |
 
 ## Datos: `datos/girs2024_caracteristicas.csv`
 
@@ -70,6 +79,6 @@ df = pd.read_csv(URL, dtype={"CantonId": str})
 
 ## Resultados
 
-Con K-Means (k = 5) se identificaron cinco perfiles: *Pequeños con servicio básico completo*, *Recolección diferenciada*, *Urbanos de mayor escala sin separación*, *Barrido limitado* y *Recuperación activa de inorgánicos*. El detalle está en el notebook.
+Con K-Means (k = 5, `n_init=50`, semilla 0) se identificaron cinco perfiles: *Pequeños con servicio básico completo* (76 cantones), *Recolección diferenciada* (52), *Urbanos de mayor escala sin separación* (49), *Barrido limitado* (33) y *Recuperación activa de inorgánicos* (5). El detalle está en el notebook y en el informe.
 
 > Análisis exploratorio con fines académicos. Los perfiles **no son un ranking** ni una clasificación oficial de municipios.
