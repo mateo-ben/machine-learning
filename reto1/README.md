@@ -25,10 +25,9 @@ El archivo de datos de este repositorio **no es la base original**. Es una tabla
 reto1/
 ├── datos/
 │   └── girs2024_caracteristicas.csv
-├── Reto1_GIRS_notebook.ipynb
 ├── Graficos_informe_Reto1.xlsx
-├── Informe_Reto1.docx
-└── README.md
+├── README.md
+└── Reto1_GIRS_notebook.ipynb
 ```
 
 | Archivo | Contenido |
