@@ -35,7 +35,6 @@ reto1/
 | `datos/girs2024_caracteristicas.csv` | Base preparada para el análisis (descrita abajo) |
 | `Reto1_GIRS_notebook.ipynb` | Notebook de Colab: auditoría, preparación, K-Means, Ward, PCA, perfiles y conclusiones. Genera la Figura 3 del informe (`figura3_pca.png`) |
 | `Graficos_informe_Reto1.xlsx` | Datos y gráficos de las Figuras 1 y 2 del informe, elaborados con los valores obtenidos en el notebook |
-| `Informe_Reto1.docx` | Informe divulgativo dirigido a técnicos municipales |
 
 ## Datos: `datos/girs2024_caracteristicas.csv`
 
